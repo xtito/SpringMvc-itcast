@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>Parent</artifactId>
+        <groupId>cn.parent</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../Parent/pom.xml</relativePath>
+    </parent>
+
+    <!-- pom模型版本 -->
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- 定义当前 Maven 项目隶属项目,对应 java 的包结构 -->
+    <groupId>cn.zy.xml</groupId>
+
+    <!-- 定义实际项目中的一个模块 -->
+    <artifactId>mvc-xml</artifactId>
+
+    <!-- 定义当前项目的当前版本 -->
+    <version>1.0-SNAPSHOT</version>
+
+    <!-- 定义该项目的打包方式 -->
+    <packaging>war</packaging>
+
+    <name>mvc-xml</name>
+
+</project>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="cn.zy.mybatis.mapper.ItemsMapperCustom">
+<mapper namespace="cn.zy.ssm.mapper.ItemsMapperCustom">
 
     <!-- 定义商品查询的sql片段，就是商品查询条件 -->
     <sql id="query_items_where">
@@ -18,14 +18,14 @@
     <!-- parameterType传入包装对象(包装了查询条件)
         resultType建议使用扩展对象
      -->
-    <select id="findItemsList" parameterType="cn.zy.mybatis.beans.ItemsQueryVo" resultType="cn.zy.mybatis.beans.ItemsCustom">
+    <select id="findItemsList" parameterType="cn.zy.ssm.beans.ItemsQueryVo" resultType="cn.zy.ssm.beans.ItemsCustom">
         SELECT items.* FROM items
         <where>
             <include refid="query_items_where"/>
         </where>
     </select>
 
-    <insert id="saveItems" parameterType="cn.zy.mybatis.beans.Items">
+    <insert id="saveItems" parameterType="cn.zy.ssm.beans.Items">
         INSERT INTO items (name, price, detail, pic, createtime)
         VALUES (#{name}, #{price}, #{detail}, #{pic}, #{createtime})
     </insert>

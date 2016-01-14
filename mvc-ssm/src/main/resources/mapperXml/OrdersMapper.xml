@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="cn.zy.mybatis.mapper.OrdersMapper">
-    <resultMap id="BaseResultMap" type="cn.zy.mybatis.beans.Orders">
+<mapper namespace="cn.zy.ssm.mapper.OrdersMapper">
+    <resultMap id="BaseResultMap" type="cn.zy.ssm.beans.Orders">
         <id column="id" property="id" jdbcType="INTEGER"/>
         <result column="user_id" property="userId" jdbcType="INTEGER"/>
         <result column="number" property="number" jdbcType="VARCHAR"/>
@@ -71,7 +71,7 @@
     <sql id="Base_Column_List">
         id, user_id, number, createtime, note
     </sql>
-    <select id="selectByExample" resultMap="BaseResultMap" parameterType="cn.zy.mybatis.beans.OrdersExample">
+    <select id="selectByExample" resultMap="BaseResultMap" parameterType="cn.zy.ssm.beans.OrdersExample">
         select
         <if test="distinct">
             distinct
@@ -95,19 +95,19 @@
         DELETE FROM orders
         WHERE id = #{id,jdbcType=INTEGER}
     </delete>
-    <delete id="deleteByExample" parameterType="cn.zy.mybatis.beans.OrdersExample">
+    <delete id="deleteByExample" parameterType="cn.zy.ssm.beans.OrdersExample">
         delete from orders
         <if test="_parameter != null">
             <include refid="Example_Where_Clause"/>
         </if>
     </delete>
-    <insert id="insert" parameterType="cn.zy.mybatis.beans.Orders">
+    <insert id="insert" parameterType="cn.zy.ssm.beans.Orders">
         INSERT INTO orders (id, user_id, number,
                             createtime, note)
         VALUES (#{id,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{number,jdbcType=VARCHAR},
                 #{createtime,jdbcType=TIMESTAMP}, #{note,jdbcType=VARCHAR})
     </insert>
-    <insert id="insertSelective" parameterType="cn.zy.mybatis.beans.Orders">
+    <insert id="insertSelective" parameterType="cn.zy.ssm.beans.Orders">
         insert into orders
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="id != null">
@@ -144,7 +144,7 @@
             </if>
         </trim>
     </insert>
-    <select id="countByExample" parameterType="cn.zy.mybatis.beans.OrdersExample" resultType="java.lang.Integer">
+    <select id="countByExample" parameterType="cn.zy.ssm.beans.OrdersExample" resultType="java.lang.Integer">
         select count(*) from orders
         <if test="_parameter != null">
             <include refid="Example_Where_Clause"/>
@@ -184,7 +184,7 @@
             <include refid="Update_By_Example_Where_Clause"/>
         </if>
     </update>
-    <update id="updateByPrimaryKeySelective" parameterType="cn.zy.mybatis.beans.Orders">
+    <update id="updateByPrimaryKeySelective" parameterType="cn.zy.ssm.beans.Orders">
         update orders
         <set>
             <if test="userId != null">
@@ -202,7 +202,7 @@
         </set>
         where id = #{id,jdbcType=INTEGER}
     </update>
-    <update id="updateByPrimaryKey" parameterType="cn.zy.mybatis.beans.Orders">
+    <update id="updateByPrimaryKey" parameterType="cn.zy.ssm.beans.Orders">
         UPDATE orders
         SET user_id    = #{userId,jdbcType=INTEGER},
             number     = #{number,jdbcType=VARCHAR},

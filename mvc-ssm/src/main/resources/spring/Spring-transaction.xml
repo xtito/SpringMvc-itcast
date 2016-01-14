@@ -31,7 +31,7 @@
 
     <!-- aop -->
     <aop:config>
-        <aop:advisor advice-ref="txAdvice" pointcut="execution(* cn.zy.mybatis.service.impl.*.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut="execution(* cn.zy.ssm.service.impl.*.*(..))"/>
     </aop:config>
 
 </beans>

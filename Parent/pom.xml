@@ -22,6 +22,7 @@
         <module>../mvc-annotation</module>
         <module>../mvc-xml</module>
         <module>../mvc-mybatis</module>
+        <module>../mvc-ssm</module>
     </modules>
 
     <!-- 构建项目需要的信息 -->

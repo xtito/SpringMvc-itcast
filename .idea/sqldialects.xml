@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/mvc-mybatis/src/main/resources/mapperXml/ItemsMapper.xml" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/mvc-mybatis/src/main/resources/mapperXml/ItemsMapperCustom.xml" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/mvc-mybatis/src/main/resources/mapperXml/OrderdetailMapper.xml" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/mvc-mybatis/src/main/resources/mapperXml/OrdersMapper.xml" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/mvc-mybatis/src/main/resources/mapperXml/UserMapper.xml" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/mvc-ssm/src/main/resources/mapperXml/ItemsMapper.xml" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/mvc-ssm/src/main/resources/mapperXml/ItemsMapperCustom.xml" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/mvc-ssm/src/main/resources/mapperXml/OrderdetailMapper.xml" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/mvc-ssm/src/main/resources/mapperXml/OrdersMapper.xml" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/mvc-ssm/src/main/resources/mapperXml/UserMapper.xml" dialect="MySQL" />
+  </component>
+</project>
